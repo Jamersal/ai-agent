@@ -37,3 +37,20 @@ schema_get_files_info = types.FunctionDeclaration(
         },
     ),
 )
+
+
+get_file_content  = types.FunctionDeclaration(
+        name="get_file_content",
+        description="reading one file",
+        parameters=types.Schema(
+            type=types.Type.OBJECT,
+            properties={
+                "file_path": types.Schema(
+                    type=types.Type.STRING,
+                    description="...",
+                ),
+            },
+            required=["file_path"],
+        ),
+)
+
