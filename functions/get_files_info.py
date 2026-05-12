@@ -23,6 +23,7 @@ def get_files_info(working_directory, directory="."):
     except Exception as e:
         return f"Error listing files: {e}"
 
+
 schema_get_files_info = types.FunctionDeclaration(
     name="get_files_info",
     description="Lists files in a specified directory relative to the working directory, providing file size and directory status",
@@ -36,4 +37,3 @@ schema_get_files_info = types.FunctionDeclaration(
         },
     ),
 )
-
